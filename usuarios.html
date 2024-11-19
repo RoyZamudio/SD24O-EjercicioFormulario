@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Usuarios</title>
+    <style>
+        div { margin: 10px; }
+    </style>
+</head>
+<body>
+    <form method="post" action="http://localhost:8000/fotos" enctype="multipart/form-data">
+        <div>Nombre: <input type="text" name="nombre" /></div>        
+        <div>Dirección: <input type="text" name="direccion" /></div>
+        <div>Foto: <input type="file" name="foto" /></div>
+        <div>
+            <label>
+                <input type="checkbox" name="vip" value="1" /> VIP
+            </label>
+        </div>
+        <div><input type="submit" value="enviar" /></div>
+    </form>
+</body>
+</html>
